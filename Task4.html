@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <title>Colors</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgb(99, 155, 155);
+            /* background-image:linear-gradient(to bottom right,yellow , green ); */
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            /* justify-content:center;
+                align-items: center;  */
+            transition: background-color 20s ease-in;
+        }
+
+        body:hover {
+            animation: background 4s infinite;
+        }
+
+        div {
+            background-color: whitesmoke;
+            width: 800px;
+            height: 300px;
+            display: flex;
+            border: 3px solid #2980b9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0.2);
+            justify-content: center;
+            align-items: center;
+            transition: 0.5;
+            border-radius: 10px;
+
+            margin: auto;
+            margin-top: 200px;
+            font-size: 18px;
+            font-weight: bolder;
+            animation: divAnimation 5s infinite;
+        }
+
+        @keyframes divAnimation {
+            0% {
+                background-color: #258ace;
+                border-color: #2980b9;
+                box-shadow: 0 4px 8px rgba(0, 0, 0.2);
+            }
+
+            50% {
+                background-color: #3498db;
+                /* Intermediate background color */
+                border-color: #2980b9;
+                /* Intermediate border color */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            }
+
+            100% {
+                background-color: #4c9d47;
+                /* Intermediate background color */
+                border-color: #8ac07b;
+                /* Intermediate border color */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        div h1 {
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            position: relative;
+            animation: headAnimation 5s infinite;
+        }
+
+        div h1:hover {
+            font-family: monospace;
+        }
+
+        @keyframes headAnimation {
+
+            0% {
+                color: black;
+                text-shadow:
+                    1px 1px 0 #fff,
+                    -1px -1px 0 #fff,
+                    -1px 1px 0 #fff;
+            }
+
+            25% {
+                color: #ee2a07;
+                text-shadow:
+                    1px 1px 0 #000,
+                    /* Intermediate stroke effect */
+                    -1px -1px 0 #000,
+                    1px -1px 0 #000,
+                    -1px 1px 0 #000;
+            }
+
+            50% {
+                color: #faca0e;
+                text-shadow:
+                    1px 1px 0 #f12a07,
+                    -1px -1px 0 #1ff269,
+                    1px -1px 0 #ff6347,
+                    -1px 1px 0 #e52907;
+            }
+
+            75% {
+                color: #50b3a2;
+                text-shadow:
+                    1px 1px 0 #18d025,
+                    -1px -1px 0 #0ddf3a,
+                    1px -1px 0 #ffde59,
+                    -1px 1px 0 #ffde59;
+            }
+
+            100% {
+                color: rgb(239, 10, 235);
+                /* Final text color */
+                text-shadow:
+                    1px 1px 0 #c78e8e,
+                    1px -1px 0 #875e5e,
+                    -1px 1px 0 #895c5c;
+            }
+        }
+
+        div:hover {
+            background-color: bisque;
+            transform: scale(1.02);
+        }
+
+        div h1 span {
+            color: coral
+        }
+
+        @keyframes background {
+            0% {
+                background-color: rgb(87, 175, 175);
+            }
+
+            25% {
+                background-image: linear-gradient(to bottom right, yellow, green, rgb(30, 188, 223), white, hotpink);
+            }
+
+            50% {
+                background-image: linear-gradient(to bottom right, whitesmoke rgb(10, 49, 241), rgba(249, 6, 172, 0.448));
+            }
+
+            75% {
+                background-image: linear-gradient(to bottom right, yellow, green rgb(18, 190, 237));
+            }
+
+            100% {
+                background-image: linear-gradient(to bottom right, rgb(3, 148, 29), rgb(106, 248, 106), rgb(223, 140, 154), rgb(207, 93, 93), rgb(242, 242, 106));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Hello <span>World !!</span> दुनिया </h1>
+    </div>
+</body>
+
+</html>
